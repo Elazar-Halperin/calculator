@@ -9,52 +9,52 @@ import android.view.inputmethod.EditorInfo;
 import android.widget.Button;
 import android.widget.EditText;
 
-
-
+import org.mariuszgromada.math.mxparser.*;
 
 import java.sql.SQLXML;
 
 public class MainActivity extends AppCompatActivity {
 
-    private Calculator calc;
-
+    private boolean isDot;
+    private Expression expression;
     private EditText editText;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-        editText = (EditText) findViewById(R.id.represent) ;
-        editText.setFocusable(false);
+        editText = (EditText) findViewById(R.id.input);
+        editText.setFocusableInTouchMode(false);
+        editText.setText("");
 
-        editText.setText("0");
-
-        calc = new Calculator();
+        isDot = false;
     }
 
-    public void plusButton(View view) {
-        calc.plus(Double.parseDouble(editText.getText().toString()));
-        editText.setText("0");
+    public void numberButtonCLicked(View view) {
+        Button clickedBtn = (Button) view;
+        if(clickedBtn.getText().equals(".") && isDot) return;
+        if(clickedBtn.getText().equals(".")) {
+            updateText(".");
+            isDot = true;
+            return;
+        }
+        updateText(clickedBtn.getText().toString());
     }
 
-    public void minusButton(View view) {
-        calc.minus(Double.parseDouble(editText.getText().toString()));
-        editText.setText("0");
+    private void updateText(String text) {
+        editText.setText(editText.getText().toString() + text);
     }
 
-    public void multButton(View view) {
-        calc.mult(Double.parseDouble(editText.getText().toString()));
-        editText.setText("0");
+
+    public void addButton(View view) {
+        if(isEmpty()) return;
+
     }
 
-    public void divideButton(View view) {
-        calc.divide(Double.parseDouble(editText.getText().toString()));
-        editText.setText("0");
+    private boolean isEmpty() {
+        return editText.getText().toString().equals("");
     }
 
-    public void allClearButton(View view) {
-        editText.setText("0");
-        calc.setFirstNum(0);
-    }
+    private isSymbolBefore()
 
 }
