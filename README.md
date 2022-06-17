@@ -1,2 +1,0 @@
-# claculator
-fully responsive calculator

@@ -1,0 +1,416 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <TableLayout
+        android:id="@+id/tableLayout"
+        android:layout_width="match_parent"
+        android:layout_height="480dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent">
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <Button
+                android:id="@+id/clear"
+                android:layout_width="match_parent"
+                android:layout_height="80dp"
+                android:layout_marginStart="5dp"
+                android:layout_marginLeft="5dp"
+                android:layout_marginTop="5dp"
+                android:layout_marginEnd="5dp"
+                android:layout_marginRight="5dp"
+                android:layout_marginBottom="3dp"
+                android:layout_weight="20"
+                android:background="@drawable/circle"
+                android:fontFamily="@font/roboto_regular"
+                android:maxHeight="76dp"
+                android:onClick="allClear"
+                android:text="@string/AC"
+                android:textSize="15dp"
+                app:backgroundTint="@color/simple_task" />
+
+            <Button
+                android:id="@+id/parenthesis"
+                android:layout_width="wrap_content"
+                android:layout_height="80dp"
+                android:layout_marginStart="5dp"
+                android:layout_marginLeft="5dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginEnd="5dp"
+                android:layout_marginRight="5dp"
+                android:layout_marginBottom="5dp"
+                android:layout_weight="1"
+                android:background="@drawable/circle"
+                android:fontFamily="@font/roboto_regular"
+                android:maxHeight="76dp"
+                android:onClick="parenthesisButton"
+                android:text="@string/parenthesis"
+                android:textSize="24sp"
+                app:backgroundTint="@color/simple_task" />
+
+            <Button
+                android:id="@+id/divide"
+                android:layout_width="wrap_content"
+                android:layout_height="80dp"
+                android:layout_marginStart="5dp"
+                android:layout_marginLeft="5dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginEnd="5dp"
+                android:layout_marginRight="5dp"
+                android:layout_marginBottom="5dp"
+                android:layout_weight="1"
+                android:background="@drawable/circle"
+                android:fontFamily="@font/roboto_regular"
+                android:maxHeight="76dp"
+                android:onClick="divideButton"
+                android:text="@string/divide"
+                android:textSize="24sp"
+                app:backgroundTint="@color/button_math" />
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <Button
+                android:id="@+id/sevenButton"
+                android:layout_width="wrap_content"
+                android:layout_height="80dp"
+                android:layout_marginStart="5dp"
+                android:layout_marginLeft="5dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginEnd="5dp"
+                android:layout_marginRight="5dp"
+                android:layout_marginBottom="5dp"
+                android:layout_weight="1"
+                android:background="@drawable/circle"
+                android:fontFamily="@font/robotothin"
+                android:maxHeight="76dp"
+                android:onClick="numberButtonCLicked"
+                android:text="@string/seven"
+                android:textColor="@color/text_number"
+                android:textSize="24sp"
+                app:backgroundTint="@color/nubmer" />
+
+            <Button
+                android:id="@+id/eightBurron"
+                android:layout_width="wrap_content"
+                android:layout_height="80dp"
+                android:layout_marginStart="5dp"
+                android:layout_marginLeft="5dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginEnd="5dp"
+                android:layout_marginRight="5dp"
+                android:layout_marginBottom="5dp"
+                android:layout_weight="1"
+                android:background="@drawable/circle"
+                android:fontFamily="@font/robotothin"
+                android:maxHeight="76dp"
+                android:onClick="numberButtonCLicked"
+                android:text="@string/eight"
+                android:textColor="@color/text_number"
+                android:textSize="24sp"
+                app:backgroundTint="@color/nubmer" />
+
+            <Button
+                android:id="@+id/nineButton"
+                android:layout_width="wrap_content"
+                android:layout_height="80dp"
+                android:layout_marginStart="5dp"
+                android:layout_marginLeft="5dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginEnd="5dp"
+                android:layout_marginRight="5dp"
+                android:layout_marginBottom="5dp"
+                android:layout_weight="1"
+                android:background="@drawable/circle"
+                android:fontFamily="@font/robotothin"
+                android:maxHeight="76dp"
+                android:onClick="numberButtonCLicked"
+                android:text="@string/nine"
+                android:textColor="@color/text_number"
+                android:textSize="24sp"
+                app:backgroundTint="@color/nubmer" />
+
+            <Button
+                android:id="@+id/multiply"
+                android:layout_width="wrap_content"
+                android:layout_height="80dp"
+                android:layout_marginStart="5dp"
+                android:layout_marginLeft="5dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginEnd="5dp"
+                android:layout_marginRight="5dp"
+                android:layout_marginBottom="5dp"
+                android:layout_weight="1"
+                android:background="@drawable/circle"
+                android:fontFamily="@font/roboto_regular"
+                android:maxHeight="76dp"
+                android:onClick="multButton"
+                android:text="@string/multiply"
+                android:textSize="24sp"
+                app:backgroundTint="@color/button_math" />
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <Button
+                android:id="@+id/fourbutton"
+                android:layout_width="wrap_content"
+                android:layout_height="80dp"
+                android:layout_marginStart="5dp"
+                android:layout_marginLeft="5dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginEnd="5dp"
+                android:layout_marginRight="5dp"
+                android:layout_marginBottom="5dp"
+                android:layout_weight="1"
+                android:background="@drawable/circle"
+                android:fontFamily="@font/robotothin"
+                android:maxHeight="76dp"
+                android:onClick="numberButtonCLicked"
+                android:text="@string/four"
+                android:textColor="@color/text_number"
+                android:textSize="24sp"
+                app:backgroundTint="@color/nubmer" />
+
+            <Button
+                android:id="@+id/fiveButton"
+                android:layout_width="wrap_content"
+                android:layout_height="80dp"
+                android:layout_marginStart="5dp"
+                android:layout_marginLeft="5dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginEnd="5dp"
+                android:layout_marginRight="5dp"
+                android:layout_marginBottom="5dp"
+                android:layout_weight="1"
+                android:background="@drawable/circle"
+                android:fontFamily="@font/robotothin"
+                android:maxHeight="76dp"
+                android:onClick="numberButtonCLicked"
+                android:text="@string/five"
+                android:textColor="@color/text_number"
+                android:textSize="24sp"
+                app:backgroundTint="@color/nubmer" />
+
+            <Button
+                android:id="@+id/sixButton"
+                android:layout_width="wrap_content"
+                android:layout_height="80dp"
+                android:layout_marginStart="5dp"
+                android:layout_marginLeft="5dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginEnd="5dp"
+                android:layout_marginRight="5dp"
+                android:layout_marginBottom="5dp"
+                android:layout_weight="1"
+                android:background="@drawable/circle"
+                android:fontFamily="@font/robotothin"
+                android:maxHeight="76dp"
+                android:onClick="numberButtonCLicked"
+                android:text="@string/six"
+                android:textColor="@color/text_number"
+                android:textSize="24sp"
+                app:backgroundTint="@color/nubmer" />
+
+            <Button
+                android:id="@+id/substract"
+                android:layout_width="wrap_content"
+                android:layout_height="80dp"
+                android:layout_marginStart="5dp"
+                android:layout_marginLeft="5dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginEnd="5dp"
+                android:layout_marginRight="5dp"
+                android:layout_marginBottom="5dp"
+                android:layout_weight="1"
+                android:background="@drawable/circle"
+                android:fontFamily="@font/roboto_regular"
+                android:maxHeight="76dp"
+                android:onClick="subtractButton"
+                android:text="@string/minus"
+                android:textSize="24sp"
+                app:backgroundTint="@color/button_math" />
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <Button
+                android:id="@+id/oneButton"
+                android:layout_width="wrap_content"
+                android:layout_height="80dp"
+                android:layout_marginStart="5dp"
+                android:layout_marginLeft="5dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginEnd="5dp"
+                android:layout_marginRight="5dp"
+                android:layout_marginBottom="5dp"
+                android:layout_weight="1"
+                android:background="@drawable/circle"
+                android:fontFamily="@font/robotothin"
+                android:maxHeight="76dp"
+                android:onClick="numberButtonCLicked"
+                android:text="@string/one"
+                android:textColor="@color/text_number"
+                android:textSize="24sp"
+                app:backgroundTint="@color/nubmer" />
+
+            <Button
+                android:id="@+id/twoButton"
+                android:layout_width="wrap_content"
+                android:layout_height="80dp"
+                android:layout_marginStart="5dp"
+                android:layout_marginLeft="5dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginEnd="5dp"
+                android:layout_marginRight="5dp"
+                android:layout_marginBottom="5dp"
+                android:layout_weight="1"
+                android:background="@drawable/circle"
+                android:fontFamily="@font/robotothin"
+                android:maxHeight="76dp"
+                android:onClick="numberButtonCLicked"
+                android:text="@string/two"
+                android:textColor="@color/text_number"
+                android:textSize="24sp"
+                app:backgroundTint="@color/nubmer" />
+
+            <Button
+                android:id="@+id/threeButton"
+                android:layout_width="wrap_content"
+                android:layout_height="80dp"
+                android:layout_marginStart="5dp"
+                android:layout_marginLeft="5dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginEnd="5dp"
+                android:layout_marginRight="5dp"
+                android:layout_marginBottom="5dp"
+                android:layout_weight="1"
+                android:background="@drawable/circle"
+                android:fontFamily="@font/robotothin"
+                android:maxHeight="76dp"
+                android:onClick="numberButtonCLicked"
+                android:text="@string/three"
+                android:textColor="@color/text_number"
+                android:textSize="24sp"
+                app:backgroundTint="@color/nubmer" />
+
+            <Button
+                android:id="@+id/add"
+                android:layout_width="wrap_content"
+                android:layout_height="80dp"
+                android:layout_marginStart="5dp"
+                android:layout_marginLeft="5dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginEnd="5dp"
+                android:layout_marginRight="5dp"
+                android:layout_marginBottom="5dp"
+                android:layout_weight="1"
+                android:background="@drawable/circle"
+                android:fontFamily="@font/roboto_regular"
+                android:maxHeight="76dp"
+                android:onClick="addButton"
+                android:text="@string/plus"
+                android:textSize="24sp"
+                app:backgroundTint="@color/button_math" />
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <Button
+                android:id="@+id/zeroButton"
+                android:layout_width="wrap_content"
+                android:layout_height="80dp"
+                android:layout_marginStart="5dp"
+                android:layout_marginLeft="5dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginEnd="5dp"
+                android:layout_marginRight="5dp"
+                android:layout_marginBottom="5dp"
+                android:layout_weight="20"
+                android:background="@drawable/circle"
+                android:fontFamily="@font/robotothin"
+                android:maxHeight="76dp"
+                android:onClick="numberButtonCLicked"
+                android:text="@string/zero"
+                android:textColor="@color/text_number"
+                android:textSize="24sp"
+                app:backgroundTint="@color/nubmer" />
+
+            <Button
+                android:id="@+id/dotButton"
+                android:layout_width="wrap_content"
+                android:layout_height="80dp"
+                android:layout_marginStart="5dp"
+                android:layout_marginLeft="5dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginEnd="5dp"
+                android:layout_marginRight="5dp"
+                android:layout_marginBottom="5dp"
+                android:layout_weight="1"
+                android:background="@drawable/circle"
+                android:fontFamily="@font/robotothin"
+                android:maxHeight="76dp"
+                android:onClick="numberButtonCLicked"
+                android:text="@string/dot"
+                android:textColor="@color/text_number"
+                android:textSize="24sp"
+                app:backgroundTint="@color/nubmer" />
+
+            <Button
+                android:id="@+id/equal"
+                android:layout_width="wrap_content"
+                android:layout_height="80dp"
+                android:layout_marginStart="5dp"
+                android:layout_marginLeft="5dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginEnd="5dp"
+                android:layout_marginRight="5dp"
+                android:layout_marginBottom="5dp"
+                android:layout_weight="1"
+                android:background="@drawable/circle"
+                android:fontFamily="@font/roboto_regular"
+                android:maxHeight="76dp"
+                android:onClick="equalButton"
+                android:text="@string/equal"
+                android:textSize="24sp"
+                app:backgroundTint="@color/button_math" />
+        </TableRow>
+    </TableLayout>
+
+    <EditText
+        android:id="@+id/input"
+        android:layout_width="match_parent"
+        android:layout_height="180dp"
+        android:background="@null"
+        android:ems="10"
+        android:fontFamily="@font/robotothin"
+        android:gravity="top"
+        android:inputType="textCapSentences|textMultiLine"
+        android:text="Name"
+        android:textSize="50sp"
+        android:singleLine="false"
+        android:scrollHorizontally="false"
+
+        app:layout_constraintBottom_toTopOf="@+id/tableLayout"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.083" />
+</androidx.constraintlayout.widget.ConstraintLayout>

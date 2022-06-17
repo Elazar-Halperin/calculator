@@ -1,0 +1,59 @@
+[33mcommit b68a20a033eae14adfbbdc9cc209bc740d0e12d6[m[33m ([m[1;36mHEAD -> [m[1;32mmaster[m[33m, [m[1;32mmain[m[33m)[m
+Author: Elazar Halperin <elazarhalper@gmail.com>
+Date:   Fri Jun 17 12:09:53 2022 +0300
+
+    hi
+
+[33mcommit ea8ea11fee1110729d021de0ba908d67df183579[m
+Author: Elazar Halperin <elazarhalper@gmail.com>
+Date:   Fri Jun 17 11:36:17 2022 +0300
+
+    edittext now fully responsive
+
+[33mcommit 8d023f56b101801247febe0e60cd011e575113b0[m
+Author: Elazar Halperin <elazarhalper@gmail.com>
+Date:   Thu Jun 16 23:13:21 2022 +0300
+
+    Added divide button, changed settings to only ltr
+
+[33mcommit 7e98cb3b6d8763b74f273837e11b04004532c37d[m
+Author: Elazar Halperin <elazarhalper@gmail.com>
+Date:   Thu Jun 16 15:15:31 2022 +0300
+
+    added full functionality to the add, subruct, mult, equal buttons
+
+[33mcommit e48b534213af88656a760ad17a4471a4aa1d70ac[m[33m ([m[1;31morigin/master[m[33m)[m
+Author: Elazar Halperin <elazarhalper@gmail.com>
+Date:   Thu Jun 16 12:06:27 2022 +0300
+
+    Redisigning the whole application, added grid system and some functionality
+
+[33mcommit 7da8d9d349b4bf5e66ccc0d3fce6e84e6cb76555[m
+Author: Elazar Halperin <elazarhalper@gmail.com>
+Date:   Thu Jun 16 00:13:15 2022 +0300
+
+    claculator. added buttons and some logic
+
+[33mcommit f77fa3d7597d4f2f748a2536bee259ba06f9637d[m[33m ([m[1;32mnatan[m[33m)[m
+Author: Elazar Halperin <elazarhalper@gmail.com>
+Date:   Fri Jun 10 12:15:46 2022 +0300
+
+    Added gif, Logs to ru
+
+[33mcommit 726ea8b674a08b028b643c4ac3edff61ef98b755[m
+Author: Elazar Halperin <elazarhalper@gmail.com>
+Date:   Fri Jun 10 12:05:16 2022 +0300
+
+    added ur mom
+
+[33mcommit dc3aadd641d863af537df17a50c95f8679a580ba[m
+Author: Elazar Halperin <elazarhalper@gmail.com>
+Date:   Fri Jun 10 12:00:55 2022 +0300
+
+    added src for image
+
+[33mcommit c24717b5873a9223274dbd6194c73ecf27168111[m
+Author: Elazar Halperin <elazarhalper@gmail.com>
+Date:   Fri Jun 10 11:58:10 2022 +0300
+
+    adding all the files
