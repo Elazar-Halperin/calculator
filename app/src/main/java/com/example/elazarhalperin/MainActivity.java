@@ -118,6 +118,10 @@ public class MainActivity extends AppCompatActivity {
 
     public void equalButton(View view) {
         if(isEmpty()) return;
+        if(parenthesisNum > 0) {
+            Toast.makeText(this, "Close parenthesis", Toast.LENGTH_SHORT).show();
+            return;
+        }
         Expression expression = new Expression(editText.getText().toString());
         double result = expression.calculate();
         Log.d("Error", expression.getErrorMessage());
@@ -135,7 +139,13 @@ public class MainActivity extends AppCompatActivity {
     }
 
     public void parenthesisButton(View view) {
-        String last = editText.getText().toString().substring(editText.getText().length() - 1);
+        String last = "";
+        try {
+            last = editText.getText().toString().substring(editText.getText().length() - 1);
+        } catch (Exception e) {
+            Log.d("error", "hi");
+        }
+
         if(parenthesisNum == 0) {
             updateText("(");
             parenthesisNum++;
@@ -153,14 +163,16 @@ public class MainActivity extends AppCompatActivity {
     }
 
     private void updateText(String text) {
-        if(editText.getText().length() >= 40) {
+
+        if (editText.getText().length() >= 40) {
             Toast.makeText(this, "Max characters is 40", Toast.LENGTH_SHORT).show();
             return;
         }
         editText.setText(editText.getText().toString() + text);
-        if(editText.getText().length() >= 15) {
+        if (editText.getText().length() >= 15) {
             editText.setTextSize(40);
         }
+
     }
 
 
