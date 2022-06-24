@@ -87,6 +87,13 @@ public class MainActivity extends AppCompatActivity {
 
     }
 
+    public void deleteButton(View view)  {
+        if(editText.getText().length() < 1) {
+            return;
+        }
+        deleteLastChar();
+    }
+
     public void multButton(View view) {
         if(isEmpty()) return;
         isDot = false;
@@ -119,7 +126,7 @@ public class MainActivity extends AppCompatActivity {
     public void equalButton(View view) {
         if(isEmpty()) return;
         if(parenthesisNum > 0) {
-            Toast.makeText(this, "Close parenthesis", Toast.LENGTH_SHORT).show();
+            Toast.makeText(this, " you have to close the parenthesis", Toast.LENGTH_SHORT).show();
             return;
         }
         Expression expression = new Expression(editText.getText().toString());
@@ -158,6 +165,11 @@ public class MainActivity extends AppCompatActivity {
             isDot = false;
             return;
         }
+        if(isSymbolBefore()) {
+            replaceLast(")");
+            parenthesisNum--;
+            return;
+        }
         updateText(")");
         parenthesisNum--;
     }
@@ -176,6 +188,11 @@ public class MainActivity extends AppCompatActivity {
     }
 
 
+
+    private void deleteLastChar() {
+        String text =  editText.getText().toString().substring(0, editText.getText().length() - 1);
+        editText.setText(text);
+    }
 
     private boolean isEmpty() {
         return editText.getText().toString().equals("");
